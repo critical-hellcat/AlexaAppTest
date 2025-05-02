@@ -17,7 +17,7 @@ destination_token = my
 source_repo_name = 'critical-hellcat/CustomProcessorTest'
 properties_path = 'Properties'
 repo_dir = os.getcwd()
-new_branch = 'read-properties-from-atc'
+new_branch = 'read-properties-from-atc-new'
 
 # === Authenticate with GitHub ===
 source_github = Github(source_token)
