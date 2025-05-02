@@ -6,8 +6,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     env:
-      MY_API_KEY: ${{ vars.TOKEN }}
+      MY_OWN: ${{ vars.TOKEN }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v3

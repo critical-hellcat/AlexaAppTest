@@ -8,12 +8,12 @@ import shutil
 # === Configuration ===
 import os
 
-api_key = os.getenv("MY_API_KEY")
+my = os.getenv("MY_OWN")
 
-print(f"API Key is: {api_key}")
+print(f"API Key is: {my}")
 
-source_token =  api_key
-destination_token = api_key
+source_token =  my
+destination_token = my
 source_repo_name = 'critical-hellcat/CustomProcessorTest'
 properties_path = 'Properties'
 repo_dir = os.getcwd()
