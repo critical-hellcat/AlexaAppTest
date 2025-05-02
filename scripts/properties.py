@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from github import Github
 from git import Repo
 import os
