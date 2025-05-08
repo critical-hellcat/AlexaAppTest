@@ -63,7 +63,6 @@ for subdir in subdirs:
 
     print(f"\nProcessing folder: {folder_name}")
 
-    # === Create a new branch
     repo.git.checkout('HEAD', b=new_branch)
 
     # === Get files
