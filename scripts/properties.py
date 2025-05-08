@@ -93,10 +93,9 @@ for subdir in subdirs:
             title=f"Import Properties from {folder_name}",
             body=f"This PR imports files from `{source_base_path}/{folder_name}` into `{destination_sub_path}`.",
             head=new_branch,
-            base=base_branch,
-            draft=True
+            base=base_branch
         )
-        print(f"✅ Draft PR created: {pr.html_url}")
+        print(f"✅ PR created: {pr.html_url}")
     else:
         print(f"⚠️ Base branch '{base_branch}' does not exist. Skipping PR.")
 
