@@ -59,11 +59,10 @@ for subdir in subdirs:
     folder_name = subdir.name
     timestamp = datetime.utcnow().strftime("%Y%m%d%H%M%S")
     new_branch = f"import-properties-{folder_name}-{timestamp}"
-    base_branch = f"platform/{folder_name}"
+    base_branch = folder_name if folder_name == "develop" else f"platform/{folder_name}"
 
     print(f"\nProcessing folder: {folder_name}")
 
-    # === Create a new branch
     repo.git.checkout('HEAD', b=new_branch)
 
     # === Get files
