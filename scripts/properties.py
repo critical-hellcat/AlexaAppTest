@@ -95,7 +95,7 @@ for subdir in subdirs:
             head=new_branch,
             base=base_branch
         )
-        print(f"✅ Draft PR created: {pr.html_url}")
+        print(f"✅ PR created: {pr.html_url}")
     else:
         print(f"⚠️ Base branch '{base_branch}' does not exist. Skipping PR.")
 
