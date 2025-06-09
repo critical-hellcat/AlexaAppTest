@@ -30,8 +30,4 @@ jobs:
       - name: Run deploy script
         run: ./scripts/properties.py
 
-      - name: Run
-        run: |
-     
-
 
